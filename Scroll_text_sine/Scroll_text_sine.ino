@@ -70,8 +70,7 @@ for (float in = 0; in < 6.283; in = in + 0.1) //Stepping along the wave, with in
 //
 int drawprint(char var1[], int x, int y) {
   // graphic commands to redraw the complete screen should be placed here  
-  // u8g.setFont(u8g_font_unifont);
-  // u8g.setFont(u8g_font_unifont);
+  // u8g.setFont(u8g_font_unifont); //uncomment to change font
   u8g.setFont(u8g_font_lucasfont_alternate);
   u8g.setPrintPos(x, y); 
   // call procedure from base class, http://arduino.cc/en/Serial/Print
