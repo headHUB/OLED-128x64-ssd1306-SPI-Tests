@@ -50,7 +50,7 @@ void loop() {
 for (float in = 0; in < 6.283; in = in + 0.1) //Stepping along the wave, with input values from 0 to 6.283 (2 * pi)
                                                  //to increase number of points add 0.01 to in instead  
 {
-  yPos = sin(in)*21+44; //yPos = sin(in) * range + offset 
+  yPos = sin(in)*20+44; //yPos = sin(in) * range + offset 
                           //to get to a number that ranges from 0 to n 
                           //use 1/2 n for both the range and offset
   xPos-=3; //Determines x position and x speed with a looping integer. 
@@ -58,8 +58,8 @@ for (float in = 0; in < 6.283; in = in + 0.1) //Stepping along the wave, with in
     u8g.firstPage();  
     do {
       drawprint(message,xPos,yPos); //scroll text - string is message
-      drawprint2(yPos,100,10); //print value of yPos,xoffset,yoffset
-      drawprint2(xPos,0,10); //print value of xPos,xoffset,yoffset
+      drawprint2(yPos,103,7); //print value of yPos,xoffset,yoffset
+      drawprint2(xPos,0,7); //print value of xPos,xoffset,yoffset
     } 
     while( u8g.nextPage() );
 }  
